@@ -50,5 +50,5 @@ This script crawls data from Instagram and Pinterest based on a given keyword.
 ```
 
 ```bash
-   path_to_extension = "C:\\Users\\{name}\\AppData\\Local\\Microsoft\\Edge Dev\\Use Data\\Default\\Extensions\\djcledakkebdgjncnemijiabiaimbaic\\1.8.8_0"
+   path_to_extension = "C:\\Users\\{name}\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 4\\Extensions\\djcledakkebdgjncnemijiabiaimbaic\\1.8.8_0"
 ```
