@@ -10,6 +10,9 @@ def open_instagram_window():
 def open_pinterest_window():
     open_keyword_window("Pinterest")
 
+def open_tiktok_window():
+    open_keyword_window("Tiktok")
+
 # Hàm mở cửa sổ nhập keyword
 def open_keyword_window(platform):
     # Xóa nội dung cửa sổ chính
@@ -29,6 +32,8 @@ def open_keyword_window(platform):
                 subprocess.run(["python", "crawl/crawl_pinterest.py", keyword])
             elif platform == "Instagram":
                 subprocess.run(["python", "crawl/crawl_instagram.py", keyword])
+            elif platform == "Tiktok":
+                subprocess.run(["python", "crawl/crawl_tiktok.py", keyword])
         else:
             messagebox.showwarning("Cảnh báo", "Vui lòng nhập keyword!")
 
@@ -45,6 +50,7 @@ def show_main_window():
     tk.Label(root, text="Trang chủ", font=("Arial", 20)).pack(pady=20)
     tk.Button(root, text="Instagram", font=("Arial", 14), width=15, command=open_instagram_window).pack(pady=10)
     tk.Button(root, text="Pinterest", font=("Arial", 14), width=15, command=open_pinterest_window).pack(pady=10)
+    tk.Button(root, text="Tiktok", font=("Arial", 14), width=15, command=open_tiktok_window).pack(pady=10)
 
 # Tạo cửa sổ chính
 root = tk.Tk()

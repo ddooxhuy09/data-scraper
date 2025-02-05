@@ -36,3 +36,19 @@ This script crawls data from Instagram and Pinterest based on a given keyword.
 ```bash
    python main.py
 ```
+
+## Setup crawl Pinterest
+
+1. Download extension for Chrome: https://chromewebstore.google.com/detail/pinterest-sort-extension/djcledakkebdgjncnemijiabiaimbaic
+
+2. Set the correct paths in the crawl_pinterest.py script:
+
+- Replace {name}
+
+```bash
+   user_data_dir = "C:\\Users\\{name}\\AppData\\Local\\Google\\Chrome\\User Data\\Default"
+```
+
+```bash
+   path_to_extension = "C:\\Users\\{name}\\AppData\\Local\\Microsoft\\Edge Dev\\Use Data\\Default\\Extensions\\djcledakkebdgjncnemijiabiaimbaic\\1.8.8_0"
+```
