@@ -52,3 +52,5 @@ This script crawls data from Instagram and Pinterest based on a given keyword.
 ```bash
    path_to_extension = "C:\\Users\\{name}\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 4\\Extensions\\djcledakkebdgjncnemijiabiaimbaic\\1.8.8_0"
 ```
+
+- Note: You should double-check each path on your machine to ensure that you can locate the folder containing the Pinterest extension folder.
