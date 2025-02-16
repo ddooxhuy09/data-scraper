@@ -13,6 +13,12 @@ def open_pinterest_window():
 def open_tiktok_window():
     open_keyword_window("Tiktok")
 
+def open_aliexpress_window():
+    open_keyword_window("Aliexpress")
+
+def open_shein_window():
+    open_keyword_window("Shein")
+
 # Hàm mở cửa sổ nhập keyword
 def open_keyword_window(platform):
     # Xóa nội dung cửa sổ chính
@@ -34,6 +40,10 @@ def open_keyword_window(platform):
                 subprocess.run(["python", "crawl/crawl_instagram.py", keyword])
             elif platform == "Tiktok":
                 subprocess.run(["python", "crawl/crawl_tiktok.py", keyword])
+            elif platform == "Aliexpress":
+                subprocess.run(["python", "aliexpress/aliexpress.py", keyword])
+            elif platform == "Shein":
+                subprocess.run(["python", "shein/main.py", keyword])
         else:
             messagebox.showwarning("Cảnh báo", "Vui lòng nhập keyword!")
 
@@ -51,11 +61,13 @@ def show_main_window():
     tk.Button(root, text="Instagram", font=("Arial", 14), width=15, command=open_instagram_window).pack(pady=10)
     tk.Button(root, text="Pinterest", font=("Arial", 14), width=15, command=open_pinterest_window).pack(pady=10)
     tk.Button(root, text="Tiktok", font=("Arial", 14), width=15, command=open_tiktok_window).pack(pady=10)
+    tk.Button(root, text="Aliexpress", font=("Arial", 14), width=15, command=open_aliexpress_window).pack(pady=10)
+    tk.Button(root, text="Shein", font=("Arial", 14), width=15, command=open_shein_window).pack(pady=10)
 
 # Tạo cửa sổ chính
 root = tk.Tk()
 root.title("Data Crawler")
-root.geometry("400x300")
+root.geometry("800x600")
 
 # Hiển thị giao diện chính ban đầu
 show_main_window()
