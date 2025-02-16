@@ -67,6 +67,12 @@ This script crawls data from Instagram and Pinterest based on a given keyword.
    user_data_dir = "C:\\Users\\{name}\\AppData\\Local\\Google\\Chrome\\User Data\\Default"
 ```
 
+- Install lib
+
+```bash
+   pip install -r requirements.txt
+```
+
 ---
 
 ## Guide to scrape data Temu
